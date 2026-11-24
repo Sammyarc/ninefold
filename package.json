@@ -1,0 +1,23 @@
+{
+  "name": "ninefold",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "config": {
+    "port": 4415,
+    "icons": {
+      "tile": "#ff5233",
+      "ogY": 0
+    }
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node --check assets/js/site-core.js && node --check script.js",
+    "icons": "node scripts/make-icons.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "axe-core": "4.10.3"
+  }
+}

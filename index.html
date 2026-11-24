@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ninefold — Brand and web studio in Bristol and Lisbon</title>
+  <meta name="description" content="Ninefold is a brand and web studio of 18 people in Bristol and Lisbon. We design identities, build fast websites and grow them after launch.">
+  <meta name="theme-color" content="#f1ede4">
+
+  <!-- Placeholder domain: replace https://ninefold.example.com/ in the 4 absolute URLs below once the site is live -->
+  <link rel="canonical" href="https://ninefold.example.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ninefold">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://ninefold.example.com/">
+  <meta property="og:title" content="Ninefold — Brands & sites that refuse to blend in">
+  <meta property="og:description" content="A brand and web studio in Bristol and Lisbon. Identities, fast websites and growth after launch.">
+  <meta property="og:image" content="https://ninefold.example.com/assets/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Ninefold home page: the headline Brands and sites that refuse to blend in, set in huge compressed type with a team photo, a tomato block and a cobalt star.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ninefold — Brands & sites that refuse to blend in">
+  <meta name="twitter:description" content="A brand and web studio in Bristol and Lisbon. Identities, fast websites and growth after launch.">
+  <meta name="twitter:image" content="https://ninefold.example.com/assets/og-image.jpg">
+  <meta name="twitter:image:alt" content="The Ninefold home page: the headline Brands and sites that refuse to blend in, set in huge compressed type with a team photo, a tomato block and a cobalt star.">
+
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    /* Hide the hero lines only until the intro plays; never longer than 2.5s if a script fails. */
+    (function (d) {
+      var c = d.documentElement.classList; c.add('js');
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) { c.add('anim-pending'); setTimeout(function () { c.remove('anim-pending'); }, 2500); }
+    })(document);
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <!-- Ninefold mark: a paper strip draws a 9 and folds at its foot, showing its yellow back -->
+  <symbol id="logo-mark" viewBox="0 0 48 48"><rect width="48" height="48" rx="13" fill="#ff5233"/><circle cx="22" cy="18" r="8" fill="none" stroke="#121116" stroke-width="6"/><path d="M27 18h6v20l-6-6z" fill="#121116"/><path d="M27 32l6 6H15v-6z" fill="#ffd447"/></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5v17c0 .4.4.6.7.4l13.6-8.5c.3-.2.3-.6 0-.8L6.7 3.1c-.3-.2-.7 0-.7.4z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <!-- eight-point burst, the studio's typographic ornament -->
+  <symbol id="i-burst" viewBox="0 0 100 100" fill="currentColor"><path d="M50 0 61 27 89 11 73 39 100 50 73 61 89 89 61 73 50 100 39 73 11 89 27 61 0 50 27 39 11 11 39 27Z"/></symbol>
+</svg>
+
+<header class="header" data-header>
+  <div class="header__bar wrap">
+    <a class="logo" href="#top" aria-label="Ninefold, back to top">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#logo-mark"/></svg>
+      <span class="logo__word">ninefold</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work <span class="nav__count">6</span></a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#studio">Studio</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="header__right">
+      <p class="status"><span class="status__dot" aria-hidden="true"></span>Booking for March 2027</p>
+      <a class="btn btn--ink btn--sm btn--icon" href="#contact">Start a project<span class="btn__ic" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span></a>
+      <button class="burger" type="button" data-menu-toggle aria-controls="site-menu" aria-expanded="false" aria-label="Open menu"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="site-menu" role="dialog" aria-label="Menu" tabindex="-1" data-bp="1023" inert>
+  <nav class="menu__nav" aria-label="Menu">
+    <a href="#work" style="--i:0">Work</a>
+    <a href="#services" style="--i:1">Services</a>
+    <a href="#process" style="--i:2">Process</a>
+    <a href="#studio" style="--i:3">Studio</a>
+    <a href="#pricing" style="--i:4">Pricing</a>
+    <a href="#contact" style="--i:5">Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--tomato" href="#contact">Start a project</a>
+    <button class="btn btn--ghost-light" type="button" data-dialog="call">Book an intro call</button>
+  </div>
+</div>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hero wrap" id="top" aria-labelledby="hero-title">
+    <h1 class="hero__title" id="hero-title">
+      <span class="hero__row" data-intro="1">Brands <span class="hero__pill" aria-hidden="true"><img src="assets/photos/hero-pill.webp" width="640" height="300" alt="" fetchpriority="high"></span> &amp; sites</span>
+      <span class="hero__row" data-intro="2">that <span class="hero__box">refuse</span> <span class="hero__burst" aria-hidden="true"><svg><use href="#i-burst"/></svg></span></span>
+      <span class="hero__row tone" data-intro="3">to blend in.</span>
+    </h1>
+    <div class="sticker" aria-hidden="true" data-intro="3">
+      <svg viewBox="0 0 170 170"><defs><path id="circ" d="M85 85 m-66 0 a66 66 0 1 1 132 0 a66 66 0 1 1 -132 0"/></defs><circle cx="85" cy="85" r="84"/><text><textPath href="#circ">Design · Build · Grow · Repeat ·</textPath></text></svg>
+      <svg class="sticker__burst" viewBox="0 0 100 100"><use href="#i-burst"/></svg>
+    </div>
+    <div class="hero__foot" data-intro="4">
+      <p class="hero__lede"><strong>Ninefold is a brand and web studio of 18 people in Bristol and Lisbon.</strong> We design identities, build fast websites and grow them after launch, for companies that would rather be remembered than be safe.</p>
+      <div class="hero__cta">
+        <a class="btn btn--ink btn--icon" href="#contact">Start a project<span class="btn__ic" aria-hidden="true"><svg><use href="#i-arrow-up-right"/></svg></span></a>
+        <a class="btn btn--line" href="#work">See the work</a>
+      </div>
+      <button class="reel" type="button" data-dialog="reel">
+        <img src="assets/photos/reel.webp" width="640" height="380" alt="">
+        <span class="reel__label"><span class="reel__play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>Watch the 2026 reel, 1:24</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="clients wrap" aria-label="Clients">
+    <p class="clients__label">Trusted by</p>
+    <ul class="clients__list">
+      <li class="cl1">SALTBOX</li><li class="cl2">Northern Ferry Co.</li><li class="cl3">HALO</li><li class="cl4">tempo/run</li><li class="cl5">Atlas &amp; Ink</li><li class="cl2">Pip &amp; Pine</li>
+    </ul>
+  </section>
+
+  <!-- Services band -->
+  <div class="band" aria-hidden="true">
+    <div class="band__track">
+      <span>Branding</span><svg><use href="#i-burst"/></svg><span class="o">Websites</span><svg><use href="#i-burst"/></svg><span>Development</span><svg><use href="#i-burst"/></svg><span class="t">Growth</span><svg><use href="#i-burst"/></svg><span class="o">Motion</span><svg><use href="#i-burst"/></svg>
+      <span>Branding</span><svg><use href="#i-burst"/></svg><span class="o">Websites</span><svg><use href="#i-burst"/></svg><span>Development</span><svg><use href="#i-burst"/></svg><span class="t">Growth</span><svg><use href="#i-burst"/></svg><span class="o">Motion</span><svg><use href="#i-burst"/></svg>
+    </div>
+  </div>
+
+  <!-- Work -->
+  <section class="work wrap" id="work" aria-labelledby="work-title">
+    <div class="sec-head">
+      <div data-rise><p class="label">Selected work, 2024 to 2026</p><h2 id="work-title" class="h2">Work that <span class="tone">gets talked about.</span></h2></div>
+      <div class="filters" role="group" aria-label="Filter projects" data-rise>
+        <button type="button" data-filter="all" aria-pressed="true">All <span>6</span></button>
+        <button type="button" data-filter="branding" aria-pressed="false">Branding <span>3</span></button>
+        <button type="button" data-filter="website" aria-pressed="false">Websites <span>3</span></button>
+        <button type="button" data-filter="product" aria-pressed="false">Product <span>1</span></button>
+        <button type="button" data-filter="campaign" aria-pressed="false">Campaigns <span>1</span></button>
+      </div>
+    </div>
+    <p class="sr-only" aria-live="polite" data-filter-status></p>
+
+    <div class="grid" data-grid>
+      <article class="proj p1" data-cats="branding website" data-case-id="saltbox" data-rise>
+        <div class="proj__art"><img src="assets/photos/work-saltbox.webp" width="1300" height="867" loading="lazy" decoding="async" alt="A cardboard box packed with seasonal vegetables, herbs and grapes." style="object-position:50% 55%"></div>
+        <div class="proj__meta">
+          <p class="proj__kicker">Grocer · Bristol · 2026</p>
+          <h3><button class="proj__link" type="button" data-case="saltbox">Saltbox Grocers</button></h3>
+          <p class="proj__desc">Naming, identity, packaging and a Shopify shop for a grocer that sells seasonal veg by the box.</p>
+          <p class="proj__foot"><span class="proj__tags">Branding · Packaging · Shopify</span><span class="proj__note">Live since March 2026</span></p>
+        </div>
+      </article>
+
+      <article class="proj p2" data-cats="product" data-case-id="halo" data-rise>
+        <div class="proj__art"><img src="assets/photos/work-halo.webp" width="1100" height="1065" loading="lazy" decoding="async" alt="Two Halo screens: today’s sleep, movement and heart rings, and the weekly sleep chart." style="object-position:50% 50%"></div>
+        <div class="proj__meta">
+          <p class="proj__kicker">Health app · Lisbon · 2025</p>
+          <h3><button class="proj__link" type="button" data-case="halo">Halo Health</button></h3>
+          <p class="proj__desc">App design for a health tracker that shows three numbers a day instead of thirty.</p>
+          <p class="proj__foot"><span class="proj__tags">Product · iOS and Android</span><span class="proj__note">Rated 4.8 on the App Store</span></p>
+        </div>
+      </article>
+
+      <article class="proj p3" data-cats="campaign" data-case-id="tempo" data-rise>
+        <div class="proj__art"><img src="assets/photos/work-tempo.webp" width="1300" height="867" loading="lazy" decoding="async" alt="A group of runners on an empty road under a flyover, early in the morning." style="object-position:50% 50%"></div>
+        <div class="proj__meta">
+          <p class="proj__kicker">Run club · Bristol · 2025</p>
+          <h3><button class="proj__link" type="button" data-case="tempo">Tempo Run Club</button></h3>
+          <p class="proj__desc">Posters, route maps and a short film for a free run club that meets at 6 every morning.</p>
+          <p class="proj__foot"><span class="proj__tags">Campaign · Film</span><span class="proj__note">Pro bono</span></p>
+        </div>
+      </article>
+
+      <article class="proj p4" data-cats="website" data-case-id="ferry" data-rise>
+        <div class="proj__art"><img src="assets/photos/work-ferry.webp" width="1600" height="842" loading="lazy" decoding="async" alt="The Northern Ferry homepage showing the next four sailings, beside the mobile ticket with its QR code." style="object-position:50% 50%"></div>
+        <div class="proj__meta">
+          <p class="proj__kicker">Transport · Bristol and Cardiff · 2026</p>
+          <h3><button class="proj__link" type="button" data-case="ferry">Northern Ferry Co.</button></h3>
+          <p class="proj__desc">A booking website for an hourly passenger ferry, with tickets that go straight to your phone.</p>
+          <p class="proj__foot"><span class="proj__tags">Website · Development</span><span class="proj__note">Live since November 2025</span></p>
+        </div>
+      </article>
+
+      <article class="proj p5" data-cats="branding" data-case-id="pip" data-rise>
+        <div class="proj__art"><img src="assets/photos/work-pip.webp" width="1300" height="975" loading="lazy" decoding="async" alt="A child building a tower from plain wooden blocks on a playroom floor." style="object-position:50% 45%"></div>
+        <div class="proj__meta">
+          <p class="proj__kicker">Toy maker · Porto · 2024</p>
+          <h3><button class="proj__link" type="button" data-case="pip">Pip &amp; Pine</button></h3>
+          <p class="proj__desc">Identity and packaging for a family workshop that makes wooden toys.</p>
+          <p class="proj__foot"><span class="proj__tags">Branding · Packaging</span><span class="proj__note">Gold, Northern Design Awards 2025</span></p>
+        </div>
+      </article>
+
+      <article class="proj p6" data-cats="website branding" data-case-id="atlas" data-rise>
+        <div class="proj__art"><img src="assets/photos/work-atlas.webp" width="1300" height="975" loading="lazy" decoding="async" alt="A printer in an apron sorting freshly printed cards beside a vintage press." style="object-position:50% 40%"></div>
+        <div class="proj__meta">
+          <p class="proj__kicker">Print studio · Lisbon · In progress</p>
+          <h3><button class="proj__link" type="button" data-case="atlas">Atlas &amp; Ink</button></h3>
+          <p class="proj__desc">Identity and an online shop for a small letterpress and risograph studio. Launching March 2027.</p>
+          <p class="proj__foot"><span class="proj__tags">Branding · Shop</span><span class="proj__note">In progress</span></p>
+        </div>
+      </article>
+    </div>
+    <div class="work__more" data-rise><button class="btn btn--line" type="button" data-dialog="archive">See all 24 projects</button></div>
+  </section>
+
+  <!-- Services -->
+  <section class="svc wrap" id="services" aria-labelledby="svc-title">
+    <div data-rise><p class="label">What we do</p><h2 id="svc-title" class="h2">Four things, <span class="tone">done properly.</span></h2></div>
+    <div class="svc__list" data-accordion data-rise-children>
+      <div class="srow">
+        <h3 class="srow__h"><button class="srow__btn" type="button" id="svc-1-btn" aria-expanded="false" aria-controls="svc-1"><span class="srow__n">01</span><span class="srow__name">Brand identity</span><span class="srow__go" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></button></h3>
+        <ul class="srow__tags"><li>Strategy</li><li>Naming</li><li>Logo</li><li>Type</li><li>Guidelines</li></ul>
+        <div class="srow__panel" id="svc-1" role="region" aria-labelledby="svc-1-btn"><div class="srow__inner"><p class="srow__price">From £12k, 3 to 6 weeks</p><p class="srow__desc">Positioning, naming and a visual identity that works on a shop sign and a phone screen. You get a system, not a logo file: type, colour, layout rules and templates your team will actually use.</p></div></div>
+      </div>
+      <div class="srow is-open">
+        <h3 class="srow__h"><button class="srow__btn" type="button" id="svc-2-btn" aria-expanded="true" aria-controls="svc-2"><span class="srow__n">02</span><span class="srow__name">Websites</span><span class="srow__go" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></button></h3>
+        <ul class="srow__tags"><li>UX</li><li>Art direction</li><li>Copy</li><li>CMS</li><li>Accessibility</li></ul>
+        <div class="srow__panel" id="svc-2" role="region" aria-labelledby="svc-2-btn"><div class="srow__inner"><p class="srow__price">From £18k, 4 to 8 weeks</p><p class="srow__desc">Marketing sites that load in under a second, read well on a phone and are easy for your team to edit. Designed in the open, built on a staging link from day one, launched with a plan.</p></div></div>
+      </div>
+      <div class="srow">
+        <h3 class="srow__h"><button class="srow__btn" type="button" id="svc-3-btn" aria-expanded="false" aria-controls="svc-3"><span class="srow__n">03</span><span class="srow__name">Development</span><span class="srow__go" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></button></h3>
+        <ul class="srow__tags"><li>Next.js</li><li>Headless CMS</li><li>Shopify</li><li>Performance</li></ul>
+        <div class="srow__panel" id="svc-3" role="region" aria-labelledby="svc-3-btn"><div class="srow__inner"><p class="srow__price">From £15k, or as part of a website</p><p class="srow__desc">Front ends that score 100 on Lighthouse, shops that survive a sale, and content models your editors understand. We hand over clean code and documentation, never a black box.</p></div></div>
+      </div>
+      <div class="srow">
+        <h3 class="srow__h"><button class="srow__btn" type="button" id="svc-4-btn" aria-expanded="false" aria-controls="svc-4"><span class="srow__n">04</span><span class="srow__name">Growth</span><span class="srow__go" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></button></h3>
+        <ul class="srow__tags"><li>SEO</li><li>Paid social</li><li>A/B tests</li><li>Analytics</li></ul>
+        <div class="srow__panel" id="svc-4" role="region" aria-labelledby="svc-4-btn"><div class="srow__inner"><p class="srow__price">From £6k a month</p><p class="srow__desc">After launch we keep going: search, paid social and testing, with a monthly report written in plain English. If a change doesn't move a number, we say so and try something else.</p></div></div>
+      </div>
+    </div>
+
+    <ul class="nums" data-rise-children>
+      <li><strong><span data-count="140">140</span><b class="nums__x">+</b></strong><span>brands and websites launched since 2016</span></li>
+      <li><strong><span data-count="38">38</span><b class="nums__x">%</b></strong><span>average lift in conversion in the first six months</span></li>
+      <li><strong><span data-count="12">12</span></strong><span>Webcraft and Type Annual awards in three years</span></li>
+      <li><strong><span data-count="6">6</span><b class="nums__x">wk</b></strong><span>typical time from first call to a live website</span></li>
+    </ul>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div data-rise><p class="label">How a project runs</p><h2 id="process-title" class="h2">Six weeks, <span class="tone">no mystery.</span></h2></div>
+      <ol class="steps" data-rise-children data-steps>
+        <li class="step"><span class="step__wk">Week 1</span><h3>Listen</h3><p>Workshops with your team and customers. We leave with a one-page brief everyone signs.</p><span class="step__bar" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></span></li>
+        <li class="step step--hot"><span class="step__wk">Weeks 2 to 3</span><h3>Design</h3><p>Two directions, then one. You see real pages, not mood boards.</p><span class="step__bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></li>
+        <li class="step"><span class="step__wk">Weeks 4 to 5</span><h3>Build</h3><p>A staging link from day one. Weekly demos, no surprise invoices.</p><span class="step__bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+        <li class="step"><span class="step__wk">Week 6</span><h3>Launch</h3><p>Go live, train your team and set the growth plan for the next quarter.</p><span class="step__bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Studio -->
+  <section class="studio wrap" id="studio" aria-labelledby="studio-title">
+    <figure class="studio__photo" data-zoom data-rise>
+      <img src="assets/photos/studio.webp" srcset="assets/photos/studio-sm.webp 760w, assets/photos/studio.webp 1300w" sizes="(max-width: 1023px) 100vw, 56vw" width="1300" height="1240" loading="lazy" decoding="async" alt="The Ninefold team, about twenty people in pastel clothes, laughing together in a white studio.">
+      <figcaption>The whole studio, Lisbon offsite 2026</figcaption>
+    </figure>
+    <div class="studio__side">
+      <div class="studio__txt" data-rise>
+        <h2 id="studio-title">Small team. <span>Senior hands.</span></h2>
+        <p>Eighteen designers, writers and engineers, and no account managers in between. The people who pitch your project are the people who make it.</p>
+        <ul><li>4-day week</li><li>B Corp pending</li><li>Bristol + Lisbon</li><li>Hiring a designer</li></ul>
+      </div>
+      <div class="people" data-rise-children>
+        <figure class="person"><img src="assets/photos/theo.webp" width="640" height="560" loading="lazy" decoding="async" alt="Theo Marsh, smiling in glasses and a light blue shirt."><figcaption><strong>Theo Marsh</strong>Creative director</figcaption></figure>
+        <figure class="person"><img src="assets/photos/ines.webp" width="640" height="560" loading="lazy" decoding="async" alt="Ines Duarte, smiling in a navy knit sweater."><figcaption><strong>Ines Duarte</strong>Head of technology</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials + awards -->
+  <section class="quote wrap" aria-label="What clients say">
+    <div class="quote__card" data-slider data-slider-loop data-rise>
+      <div class="quote__track" data-slider-track data-scroll-region role="group" aria-label="Client quotes">
+        <figure class="quote__slide"><blockquote><p>"They gave us a brand our staff wear on their days off. <span>Sales are up 62% and people finally know our name."</span></p></blockquote><figcaption><img src="assets/photos/hannah.webp" width="120" height="120" loading="lazy" decoding="async" alt=""><span><strong>Hannah Cole</strong>Founder, Saltbox Grocers</span></figcaption></figure>
+        <figure class="quote__slide"><blockquote><p>"Bookings tripled in a season. <span>The new site does what our call centre used to."</span></p></blockquote><figcaption><img src="assets/photos/kofi.webp" width="120" height="120" loading="lazy" decoding="async" alt=""><span><strong>Kofi Mensah</strong>Head of digital, Northern Ferry Co.</span></figcaption></figure>
+        <figure class="quote__slide"><blockquote><p>"Six weeks from kick-off to the App Store. <span>They pushed back when we were wrong, and they were right."</span></p></blockquote><figcaption><img src="assets/photos/maya.webp" width="120" height="120" loading="lazy" decoding="async" alt=""><span><strong>Maya Okoro</strong>Co-founder, Halo Health</span></figcaption></figure>
+      </div>
+      <div class="quote__nav">
+        <p class="quote__count" data-slider-count>01 / 03</p>
+        <button class="round" type="button" data-slider-prev aria-label="Previous quote"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+        <button class="round round--fill" type="button" data-slider-next aria-label="Next quote"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+      </div>
+    </div>
+    <div class="awards" data-rise>
+      <h2>Recognition</h2>
+      <ul>
+        <li>Webcraft Sites of the Day<b>6</b></li>
+        <li>Type Annual selections<b>3</b></li>
+        <li>Northern Design Awards<b>Gold</b></li>
+        <li>Good Web Index, Top 50<span>2025, 2026</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing wrap" id="pricing" aria-labelledby="pricing-title">
+    <div data-rise><p class="label">Ways to work with us</p><h2 id="pricing-title" class="h2">Pick a pace. <span class="tone">Change it later.</span></h2></div>
+    <div class="plans" data-rise-children>
+      <article class="plan"><p class="plan__k">Sprint</p><h3>Two weeks</h3><p class="plan__pr">From <strong>£9k</strong></p><ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>Brand refresh or landing page</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>One senior designer, one developer</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Fixed price, fixed date</li></ul><button class="btn btn--line" type="button" data-dialog="sprint">Book a sprint</button></article>
+      <article class="plan plan--hot"><p class="plan__k">Launch</p><h3>Six weeks</h3><p class="plan__pr">From <strong>£28k</strong></p><ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>Full identity and website</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Strategy, copy and photo direction</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Built, tested and launched</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>90 days of support</li></ul><button class="btn btn--butter" type="button" data-dialog="launch">Start a launch</button></article>
+      <article class="plan"><p class="plan__k">Partner</p><h3>Monthly</h3><p class="plan__pr">From <strong>£6k</strong> a month</p><ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>A standing team for design and growth</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Monthly roadmap and reporting</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Cancel with 30 days' notice</li></ul><button class="btn btn--line" type="button" data-dialog="partner">Talk partnership</button></article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact__grid wrap">
+      <div class="contact__copy" data-rise-children>
+        <p class="label label--butter">New projects</p>
+        <h2 id="contact-title">Got something <span>worth making?</span></h2>
+        <a class="contact__mail" href="mailto:hello@ninefold.example.com">hello@ninefold.studio<svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        <dl class="contact__offices"><div><dt>Bristol</dt><dd>Paintworks, Arnos Vale</dd></div><div><dt>Lisbon</dt><dd>Rua da Boavista 72</dd></div><div><dt>Reply time</dt><dd>Within one working day</dd></div></dl>
+        <button class="btn btn--ghost-light" type="button" data-dialog="call">Or book a 20-minute intro call</button>
+      </div>
+
+      <form class="brief" data-brief novalidate data-rise>
+        <fieldset>
+          <legend>I'm interested in</legend>
+          <div class="brief__chips">
+            <label class="pick"><input type="checkbox" name="interest" value="Branding" checked><span>Branding</span></label>
+            <label class="pick"><input type="checkbox" name="interest" value="a website" checked><span>Website</span></label>
+            <label class="pick"><input type="checkbox" name="interest" value="development"><span>Development</span></label>
+            <label class="pick"><input type="checkbox" name="interest" value="growth"><span>Growth</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Budget</legend>
+          <div class="brief__chips">
+            <label class="pick pick--radio"><input type="radio" name="budget" value="under £10k"><span>Under £10k</span></label>
+            <label class="pick pick--radio"><input type="radio" name="budget" value="£10k to £30k" checked><span>£10k to £30k</span></label>
+            <label class="pick pick--radio"><input type="radio" name="budget" value="£30k to £60k"><span>£30k to £60k</span></label>
+            <label class="pick pick--radio"><input type="radio" name="budget" value="£60k or more"><span>£60k+</span></label>
+          </div>
+        </fieldset>
+        <div class="brief__fields">
+          <label class="field"><span>Your name</span><input name="name" autocomplete="name" required maxlength="80"></label>
+          <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+          <label class="field field--wide"><span>Tell us about the project</span><textarea name="message" rows="3" maxlength="1200"></textarea></label>
+        </div>
+        <button class="btn btn--tomato btn--block" type="submit">Send the brief<svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg></button>
+        <p class="brief__msg" data-brief-msg aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="logo logo--light" href="#top" aria-label="Ninefold, back to top"><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#logo-mark"/></svg><span class="logo__word">ninefold</span></a>
+        <p>A brand and web studio in Bristol and Lisbon. Ninefold is a concept studio made for this page.</p>
+      </div>
+      <nav class="footer__col" aria-label="Studio"><h2>Studio</h2><ul><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#studio">About</a></li><li><button type="button" data-dialog="careers">Careers</button></li></ul></nav>
+      <nav class="footer__col" aria-label="Follow"><h2>Follow</h2><ul><li><button type="button" data-dialog="social">Instagram</button></li><li><button type="button" data-dialog="social">LinkedIn</button></li><li><button type="button" data-dialog="social">Dribbble</button></li></ul></nav>
+      <div class="footer__col"><h2>Say hello</h2><ul><li><a href="mailto:hello@ninefold.example.com">hello@ninefold.studio</a></li><li><a href="tel:+441174960101">+44 117 496 0101</a></li></ul></div>
+    </div>
+    <div class="footer__legal">
+      <p>© <span data-current-year>2026</span> Ninefold Studio Ltd. A design concept: the studio, clients and work are invented.</p>
+      <ul><li><button type="button" data-dialog="privacy">Privacy</button></li><li><button type="button" data-dialog="terms">Terms</button></li><li><button type="button" data-dialog="a11y">Accessibility</button></li></ul>
+    </div>
+  </div>
+  <p class="footer__word" aria-hidden="true" data-fit><span data-word>ninefold</span></p>
+</footer>
+
+<!-- follows the pointer over project cards on desktop -->
+<div class="case-cursor" aria-hidden="true" data-case-cursor>View case<svg><use href="#i-arrow-up-right"/></svg></div>
+
+<!-- full case study for a project, filled by script.js -->
+<dialog class="case" id="case-dialog" aria-labelledby="case-title" data-lenis-prevent>
+  <div class="case__bar"><p class="case__pos"><span class="label">Case study</span> <span data-case-pos>01 / 06</span></p><button class="case__close" type="button" data-case-close aria-label="Close case study"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+  <div class="case__body">
+    <figure class="case__hero" data-case-hero></figure>
+    <header class="case__head">
+      <div><p class="label" data-case-kicker></p><h2 id="case-title" tabindex="-1" data-case-title></h2></div>
+      <p class="case__lede" data-case-lede></p>
+    </header>
+    <div class="case__main">
+      <dl class="case__facts">
+        <div><dt>Client</dt><dd data-case-client></dd></div>
+        <div><dt>Year</dt><dd data-case-year></dd></div>
+        <div><dt>Scope</dt><dd data-case-scope></dd></div>
+        <div><dt>Credits</dt><dd data-case-credits></dd></div>
+      </dl>
+      <div class="case__notes" data-case-notes></div>
+    </div>
+    <div class="case__gallery" data-case-gallery></div>
+    <section class="case__changed" data-case-changed-wrap><h3>What changed</h3><ul data-case-changed></ul></section>
+    <figure class="case__quote" data-case-quote-wrap><blockquote><p data-case-quote></p></blockquote><figcaption data-case-by></figcaption></figure>
+    <nav class="case__nav" aria-label="More projects">
+      <button type="button" data-case-step="-1"><small>Previous project</small><b data-case-prev></b></button>
+      <button type="button" data-case-step="1"><small>Next project</small><b data-case-next></b></button>
+    </nav>
+  </div>
+</dialog>
+
+<dialog class="dialog" id="site-dialog" aria-labelledby="dlg-title">
+  <button class="dialog__close" type="button" data-dialog-close aria-label="Close"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  <p class="label" data-dialog-eyebrow></p>
+  <h2 id="dlg-title" data-dialog-title></h2>
+  <p class="dialog__body" data-dialog-body></p>
+  <form class="dialog__form" data-dialog-form hidden>
+    <label>Your name<input name="name" autocomplete="name" required maxlength="80"></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required></label>
+    <label>Best day for a call<input name="date" type="date" required></label>
+    <button class="btn btn--ink" type="submit">Preview my booking</button>
+    <small>This is a concept site: nothing is sent and your details are cleared when you close this window.</small>
+  </form>
+  <div class="dialog__success" data-dialog-success hidden>
+    <p data-dialog-summary></p>
+    <button class="btn btn--ink" type="button" data-dialog-close>Done</button>
+  </div>
+</dialog>
+
+<script>
+  window.SITE = {
+    summary: function (d) { return d.name + ', your ' + d.subject + (d.when ? ' on ' + d.when : '') + ' is pencilled in. This is a demo, so nothing was sent.'; },
+    dialogs: {
+      call: { eyebrow: '20 minutes', title: 'Book an intro call', subject: 'intro call', body: 'Pick a day and we will send two times that suit Bristol or Lisbon. No slides, just questions.', form: true },
+      sprint: { eyebrow: 'Sprint, from £9k', title: 'Book a sprint', subject: 'sprint kick-off call', body: 'Two weeks, one senior designer and one developer. Pick a day for the kick-off call.', form: true },
+      launch: { eyebrow: 'Launch, from £28k', title: 'Start a launch', subject: 'launch kick-off call', body: 'Six weeks from first workshop to a live identity and website. Pick a day for the first call.', form: true },
+      partner: { eyebrow: 'Partner, from £6k a month', title: 'Talk partnership', subject: 'partnership call', body: 'A standing team for design and growth, with a monthly roadmap. Pick a day to talk it through.', form: true },
+      reel: { eyebrow: 'Showreel', title: 'The 2026 reel, 1:24', body: 'Ninefold is a concept studio, so the reel is not part of this page.' },
+      archive: { eyebrow: 'Archive', title: 'All 24 projects', body: 'The full archive is not part of this concept page. The six projects above are the current favourites.' },
+      careers: { eyebrow: 'Careers', title: 'We are hiring a designer', body: 'Ninefold is a concept studio, so this role is not real. On a live site this would link to the job description.' },
+      social: { eyebrow: 'Follow', title: 'Social media', body: 'Ninefold is a fictional studio, so these profiles do not exist.' },
+      privacy: { eyebrow: 'Legal', title: 'Privacy', body: 'This page uses no analytics or tracking cookies. Form details stay in your browser and are cleared when the window closes.' },
+      terms: { eyebrow: 'Legal', title: 'Terms', body: 'This is a concept landing page for a fictional studio. No bookings, briefs or payments are processed.' },
+      a11y: { eyebrow: 'Accessibility', title: 'Accessibility', body: 'This page is tested against WCAG 2.1 AA, works with a keyboard and respects reduced-motion settings.' }
+    }
+  };
+</script>
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/site-core.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
